@@ -212,7 +212,7 @@ qtdGatos + " gatos. " +
 "Tem algum grude? " + algumGrude)
 ```
 
-## Aula 4 - Criando e Manipulando Vetores e Matrizes
+## 4 - Criando e Manipulando Vetores e Matrizes
 
 ### Vetores e Matrizes - Arrays
 
