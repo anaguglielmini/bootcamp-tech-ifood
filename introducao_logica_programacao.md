@@ -30,8 +30,11 @@
 Toda aplicação tem esses 3 momentos:
 
 1 - Input: entrada de dados no aplicativo/sistema. Todo momento que tem a interação com o usuário;
+
 2 - Process: processos de verficação e processamento desses dados. São verificações e ações para realizar o pedido do usuário;
+
 3 - Output: saída dos dados processados. São comandos de saída, para retornar alguma coisa ou dar algum posicionamento ou mensagem para o usuário.
+
 - Features: funcionalidades, coisas que o usuário pode fazer na aplicação. Há diversas em uma aplicação e cada uma possuí um algoritmo com Input, Process e Output;
 - Esses conceitos permanecem iguais independemente da linguagem de programação.
 
