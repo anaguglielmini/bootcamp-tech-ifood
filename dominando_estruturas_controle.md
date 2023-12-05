@@ -202,3 +202,110 @@ switch (fruta){
 
 ## 3 - Trabalhando com Estruturas de Repetição (for, while, do-while)
 
+- Laço de repetição: conteúdo que irá se repetir até acontecer uma determinada ação permitindo que pare;
+
+### FOR
+
+```
+// nesse caso ele irá executar até o contador obtiver o valor mais próximo e menor que 5
+for (let contador = 0; contador < 5; contador++)
+
+{
+	console.log(contador)
+	console.log("Aumentando o contador)
+}
+
+// é bem comum utilizarem i para representar o contador, assim:
+// for (let i = 0; i < 5; i++)
+// {
+// console.log(i)
+// console.log("Aumentando o contador)
+// }	
+```
+
+**Exemplo:**
+
+```
+let pontosDeVida = 0
+// até menor que 10 pois começa no 0
+// colocar sempre <, > ou <=, >= pois se colocar apenas = ele irá ficar eternamente
+for(let i = 0; i < 10; i++){
+	pontosDeVida +=1
+	console.log("Tomou a poção mágica e aumentou a vida para " + i)
+}
+
+console.log(pontosDeVida + " pontos de vida")
+
+}
+
+console.log(pontosDeVida + " pontos de vida")
+```
+
+### While
+
+- Alternativa do for, não o substitui;
+- While = Enquanto;
+- Verifica primeiro e depois faz.
+
+```
+let contador = 0
+
+// irá executar o que vier até o contador chegar a 3
+while(contador < 3){
+	console.log("Olá")
+	contador++
+
+}
+```
+Nesse caso ele não irá executar pois verifica antes que o valor do contador já é 3:
+```
+let contador = 3
+
+// irá executar o que vier até o contador chegar a 3
+while(contador < 3){
+	console.log("Olá")
+	contador++
+
+}
+```
+
+### Do While
+
+- Diferença: nesse a gente coloca a regra no final;
+- Primeiro ele faz a ação e depois ele verifica.
+
+```
+let contador = 0
+
+do {
+	console.log("Hello World")
+	contador++
+} while (contador < 3)
+```
+No Do While ele executará essa questão, diferente do While, pois verifica apenas depois de executar a ação:
+```
+let contador = 3
+
+do {
+	console.log("Hello World")
+	contador++
+} while (contador < 3)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
