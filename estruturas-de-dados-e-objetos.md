@@ -58,3 +58,59 @@ function generateInvoice(invoiceProducts){
 ```
 
 ## O que são Classes e Objetos
+
+*Não é POO (programação orientada a objetos)*
+
+Parecido com JSON mas se difere na possibilidade de reaproveitamento de código e consegue adicionar métodos que trazem uma inteligência ao código.
+
+- Classe: "forma de bolo", padroniza o formato de uma estrutura de dados;
+- Objeto: "bolo", mantém a padronização da forma (classe) e implementa seus valores das propriedades. Também tem métodos inteligentes (funções próprias). É qualquer coisa que represente algo.
+- Instanciar um obejto: fazer um objeto com base naquela classe
+
+JSON - conversa entre uma aplicação e outra
+Classes - manuseio mais complexo dentro da aplicação
+
+**Na prática:**
+
+```
+// criando classe
+class formaDeBolo{
+// por boas práticas, se coloca um função com o nome de constructor
+	constructor(saborMassa, saborRecheio){
+	  this.saborMassa = saborMassa
+	  this.saborRecheio = saborRecheio
+  }	
+}
+
+// criando um objeto
+let boloFesta = new formaDeBolo("massa de chocolate", "recheio de nutella")
+
+console.log(boloFesta)
+
+console.log(boloFesta.saborMassa)
+console.log(boloFesta.saborRecheio)
+```
+
+**De outra maneira:**
+```
+// criando classe
+class formaDeBolo{
+// por boas práticas, se coloca um função com o nome de constructor
+	constructor(saborMassa, saborRecheio){
+	  this.saborMassa = saborMassa
+// mesma coisa que let saborRecheio
+	  this.saborRecheio = saborRecheio
+  }
+// declarando função inteligente, método 
+  escrever(){
+	console.log(`Um delicioso bolo de ${this.saborMassa} com recheio de ${this.saborRecheio}`)
+  }	
+}
+
+// criando um objeto
+let boloFesta = new formaDeBolo("chocolate", "nutella")
+let boloPudim = new formaDeBolo("pão de ló", "pudim")
+
+boloFesta.escrever()
+boloPudim.escrever()
+```
